@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Банковский калькулятор</string>
+    <string name="months">Месяцы</string>
+    <string name="year_percentage">Годовой процент</string>
+    <string name="base_sum">Начальная сумма</string>
+    <string name="outcome">Итог:</string>
+    <string name="calculate">Посчитать</string>
+    <string name="empty_fields">Заполните все поля!</string>
+    <string name="error">ERROR</string>
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|end">
+
+        <TextView
+            android:id="@+id/tvAppName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvCalculatedSum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvAppName"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="@string/outcome"
+            android:textSize="20sp"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/editTextBaseSum"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/tvCalculatedSum"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:hint="@string/base_sum"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/editTextYearPercentage"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/editTextBaseSum"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:hint="@string/year_percentage"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/editTextMonths"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/editTextYearPercentage"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:hint="@string/months"
+            android:importantForAutofill="no"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btnCalc"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextMonths"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="@string/calculate" />
+
+    </RelativeLayout>
+
+</LinearLayout>
